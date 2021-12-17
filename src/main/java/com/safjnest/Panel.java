@@ -24,7 +24,6 @@ public class Panel extends JPanel implements ActionListener {
         matchCheck("o");
     }
 
-    
     public boolean areMovesLeft() {
         for (int i = 0; i < grid.length; i++) 
             if(grid[i].getText().equals(" ")) 
