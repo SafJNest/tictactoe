@@ -10,7 +10,7 @@ import javax.swing.border.LineBorder;
 public class Panel extends JPanel implements ActionListener {
     private static final int MATRIX = 9;
     private static final int GAP = 6;
-    private static final Font LABEL_FONT = new Font(Font.DIALOG, Font.PLAIN, 32);
+    private static final Font LABEL_FONT = new Font(Font.DIALOG, Font.PLAIN, 50);
 
     JButton[] grid = new JButton[MATRIX];
 
@@ -218,6 +218,7 @@ public class Panel extends JPanel implements ActionListener {
     }
 
     public Panel() {
+        UIManager.getDefaults().put("Button.disabledText",Color.BLACK);
         /**
          * SE NON SI SELEZIONA CHI STARTA NON PARTE IL GAME
          */
